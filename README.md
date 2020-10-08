@@ -11,7 +11,6 @@ https://hacktoberfest.digitalocean.com/</p>
 - Polish you GitHub Skills.
 - Free swags and T-Shirts from Digital Ocean
 - Chance to get a tree planted and make Earth greener
--
 
 -----
 ### Process are as follows :- 
@@ -27,12 +26,11 @@ https://hacktoberfest.digitalocean.com/</p>
 
 -----
 ### How to Contribute to this repository
-----
 
 * Fork the repository (Click the Fork button in the top right of this page, click your Profile Image)
 * Clone the forked repository to your local machine.
 ```markdown
-git clone https://github.com/your-username/HacktoberFest2020.git
+git clone https://github.com/your-username/Hacktoberfest2020.git
 ```
 * change the present working directory
 ```markdown
