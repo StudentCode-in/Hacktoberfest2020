@@ -51,7 +51,7 @@ git push origin branch-name
 * Make a pull request.
 * Star the repository if you like.
 
-> **Note:** "Please Don't make any changes to README.MD and .all-contributorsrc"
+> **Note:** "Please Don't make any changes to README.MD
 
    
 
