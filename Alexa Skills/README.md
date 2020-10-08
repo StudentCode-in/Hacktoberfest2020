@@ -5,9 +5,9 @@
 - On the top-left corner, click Download Skill.
 - Once Downloaded, Extract the contents.
 - You will now have a folder within which following files/folders will be there:
--- interactionModels
--- lambda
--- skill.json
+   - interactionModels
+   - lambda
+   - skill.json
 - We will come back to this folder in a while.
 - Now FORK this Repository.
 - Clone the forked repo at your local PC using git clone <url>.
