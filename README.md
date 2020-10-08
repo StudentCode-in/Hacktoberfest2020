@@ -22,7 +22,7 @@ https://hacktoberfest.digitalocean.com/</p>
 ## Branch Policy
 
 - develop: If you are making a contribution make sure to send your Pull Request to this branch. All developments goes in this branch.
-- master: After significant features/bug-fixes are accumulated in development branch we will merge it with the master branch.
+- main: After significant features/bug-fixes are accumulated in development branch we will merge it with the main branch.
 
 -----
 ### How to Contribute to this repository
