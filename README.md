@@ -18,7 +18,6 @@ https://hacktoberfest.digitalocean.com/</p>
 * Create a github account if you not have one.
 * Login using github @ [Hacktoberfest](https://hacktoberfest.digitalocean.com/)
 * Create four valid pull requests (PRs) between 1st - 31st October
-* 
 
 -----
 ## Branch Policy
@@ -34,9 +33,9 @@ https://hacktoberfest.digitalocean.com/</p>
 ```markdown
 git clone <url>
 ```
-* change the present working directory
-* Make change in the repository.
-* push the changes.
+* Browse to the location where repository got cloned at your system.
+* Make changes in the repository.
+* Push the changes.
 * Make a pull request.
 
 #### You have successfully submitted your first PR, Repeat the steps for submitting 3 more!!
