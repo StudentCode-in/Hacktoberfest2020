@@ -1,6 +1,6 @@
-# HacktoberFest2020
-### Welcome to HacktoberFest 2020 Public Repository.
-<p>A month-long celebration from October 1st - 31st sponsored by Digital Ocean and GitHub to get people involved in Open Source. Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
+# Hacktoberfest-2020
+### What's Hacktoberfest?
+<p>Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month long festival of open source code presented by Digital Ocean, Intel and DEV this year in 2020.If you’ve never contributed to open source before, this is the perfect time to get started 
 
 https://hacktoberfest.digitalocean.com/</p>
 
@@ -13,10 +13,12 @@ https://hacktoberfest.digitalocean.com/</p>
 - Chance to get a tree planted and make Earth greener
 
 -----
-### Process are as follows :- 
+### Let's Begin :- 
 
+* Create a github account if you not have one.
 * Login using github @ [Hacktoberfest](https://hacktoberfest.digitalocean.com/)
 * Create four valid pull requests (PRs) between 1st - 31st October
+* 
 
 -----
 ## Branch Policy
@@ -27,30 +29,17 @@ https://hacktoberfest.digitalocean.com/</p>
 -----
 ### How to Contribute to this repository
 
-* Fork the repository (Click the Fork button in the top right of this page, click your Profile Image)
+* Fork the repository (Top right corner of this repo)
 * Clone the forked repository to your local machine.
 ```markdown
-git clone https://github.com/your-username/Hacktoberfest2020.git
+git clone <url>
 ```
 * change the present working directory
-```markdown
-cd Hacktoberfest2020
-```
-* Pick a project or make a new one
-* Make a new branch
-```markdown
-git checkout -b branch-name
-```
-* Make change in the repository with the new branch.
+* Make change in the repository.
 * push the changes.
-```markdown
-git add .
-git commit -m "Your commit Message"
-git push origin branch-name
-```
 * Make a pull request.
-* Star the repository if you like.
 
+#### You have successfully submitted your first PR, Repeat the steps for submitting 3 more!!
 > **Note:** "Please Don't make any changes to README.MD
 
    
