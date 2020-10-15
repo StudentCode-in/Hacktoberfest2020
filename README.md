@@ -1,5 +1,6 @@
 # Hacktoberfest-2020
 <a href="https://github.com/StudentCode-in/Hacktoberfest2020/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/StudentCode-in/hacktoberfest2020?label=Issues&style=flat-square"/></a>
+![Greetings](https://github.com/StudentCode-in/Hacktoberfest2020/workflows/Greetings/badge.svg)
 ### What's Hacktoberfest?
 <p>Hacktoberfest is the easiest way to get into open source! Hacktoberfest is a month long festival of open source code presented by Digital Ocean, Intel and DEV this year in 2020.If you’ve never contributed to open source before, this is the perfect time to get started 
 
