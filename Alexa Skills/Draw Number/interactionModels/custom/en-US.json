@@ -1,0 +1,147 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "draw numbers",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "DrawANumberIntent",
+          "slots": [
+            {
+              "name": "quantity",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "start",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "end",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "draw a number from {start} to {end}",
+            "draw {quantity} numbers from {start} to {end}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "DrawANumberIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "quantity",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.369584108735.323387405418.830329908207",
+                  "value": "0"
+                },
+                {
+                  "type": "isLessThanOrEqualTo",
+                  "prompt": "Slot.Validation.1507590893522.866414625147.637929507255",
+                  "value": "6"
+                }
+              ]
+            },
+            {
+              "name": "start",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {},
+              "validations": [
+                {
+                  "type": "isGreaterThan",
+                  "prompt": "Slot.Validation.369584108735.654545011642.1058104282907",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "name": "end",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.369584108735.323387405418",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How many numbers may I have to draw?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.369584108735.323387405418.830329908207",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "the number of numbers to be drawn must be greater than zero. How many numbers should I draw"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.369584108735.654545011642.1058104282907",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "choose a number greater than zero to be the starting number"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1507590893522.866414625147.637929507255",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I can only draw until six numbers. How many numbers should I draw"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "7"
+}
