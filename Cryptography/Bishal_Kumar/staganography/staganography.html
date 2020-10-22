@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> steganography</title>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="staganography.css"/>
+        <script src="staganography.js"></script>
+        <meta name="description" content="staganography"/>
+        <meta name="keywords" content="coursera" />
+        <meta name="author" content="Bishal kumar"/>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+    </head>
+    <body>
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" ></script>
+        <h1>Generate Steganographic images</h1>
+        <summary>
+            Tips to operate:
+            <details ><ol>
+                <li>The first canvas is for the image which you want to be seen by everyone!</li>
+                <li>The second canvas will contain the image which you want to hide in the first image!</li>
+                <li>upload the foreground image and background image, and click "generate final image" button to get your image!</li>
+                <li><mark>always use the foreground image of same or greater dimensions then the image to be hidden</mark></li>
+            </ol></details>
+        </summary>
+        <div class="container">
+            
+          <div id="header"  class="box">
+              <div id="image_change_box">  
+                  <canvas id="can1" class="box1"></canvas>
+                  <canvas id="can2" class="box1"></canvas>
+              </div>
+          </div>
+          <div id="footer" class="box">
+            <div class="controls">
+                <label for="forgimg">Forground image:</label>
+                <input id="forgimg"  type="file" accept="image/*" multiple="false" onchange="forImg()">
+
+                <label for="backimg">Hidden image:</label>
+                <input id="backimg" type="file" accept="image/*" multiple="false" onchange="bacImg()">
+
+                <hr/>
+                <input id="merge" type="button" onclick="generate_image()" value="generate final image" >
+                <input id="clear_can" type="button" onclick="clearImages()" value="clear canvas" >
+                
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

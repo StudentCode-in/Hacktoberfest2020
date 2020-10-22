@@ -1,0 +1,61 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows:minmax(105px,auto) ;
+    grid-template-areas:
+    "hh hh"
+    "hh hh"
+    "hh hh"
+    "hh hh"
+    "ff ff"
+    "ff ff";
+    border:2px solid red;
+    width: 100%;
+    height: 100%;
+}
+.box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border:2px solid black;
+}
+#header{
+    grid-area:hh;
+    background-color: aliceblue;
+}
+#footer{
+    grid-area:ff;
+    background-color: blanchedalmond;
+}
+
+#can1{
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    margin-right:10px;
+}
+#can2{
+    border: 2px solid black;
+    width:400px;
+    height:300px;
+    
+    margin-left: 10px;
+}
+#merge{
+    margin-left:250px;
+}
+
+#one{
+    border: 2px solid red;
+}
+#can3{
+    border:2px solid red;
+}
+body{
+    background-image: url("https://th.bing.com/th/id/OIP.89G1lBkH9nSCIn6C2deYvwHaEw?pid=Api&rs=1");
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
