@@ -1,3 +1,4 @@
+#Program to find minimum cost from 0,0 to x,y given the cost matrix
 import sys 
 
 def minCost(cost, m, n):
@@ -15,7 +16,7 @@ m = int(input('Number of rows: '))
 n = int(input('Number of columns: '))
 
 cost = []
-print('Enter the values with space seperated')
+print('Enter the values of the matrix with space seperated')
 for i in range(m):
     cost.append(list(map(int,input().split())))
 
