@@ -1,0 +1,42 @@
+body{
+	background-color: #232323;
+}
+
+h1{
+	color: white;
+	text-align: center;
+}
+
+.square{
+	width: 30%;
+	padding-bottom: 30%;
+	background: pink;
+	float: left;
+	margin: 1.66%;
+}
+
+#container{
+	max-width: 30%;
+	margin: 0 auto;
+}
+
+.stripe{
+	background-color: white;
+	text-align: center;
+	color: rgb(69, 14, 190);
+	height: 29px;
+}
+button{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+button{
+	color: blue;
+	background-color: white;
+}
+
+.inverse{
+	color: white;
+	background-color: blue;
+}
