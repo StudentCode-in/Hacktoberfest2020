@@ -40,6 +40,16 @@ git clone <url>
 * Push the changes.
 * Make a pull request.
 
+-----
+## Contributor's
+
+<a href="https://github.com/StudentCode-in/Hacktoberfest2020/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=StudentCode-in/Hacktoberfest2020" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
+-----
+
 #### You have successfully submitted your first PR, Repeat the steps for submitting 3 more!!
 > **Note:** "Please Don't make any changes to README.MD
 
