@@ -48,7 +48,6 @@ git clone <url>
 </a>
 
 Made with [contributors-img](https://contributors-img.web.app).
------
 
 #### You have successfully submitted your first PR, Repeat the steps for submitting 3 more!!
 > **Note:** "Please Don't make any changes to README.MD
