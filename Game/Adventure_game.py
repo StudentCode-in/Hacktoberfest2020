@@ -131,7 +131,7 @@ def input_check(prompt, option1, option2, option3, option4, option5, option6, op
         elif res == option6:
             break
         else:
-            print_pause("sorry,i didn't understand"
+            print_pause("sorry,i didn't understand,"
                         "please give a proper room number")
     return res
 
