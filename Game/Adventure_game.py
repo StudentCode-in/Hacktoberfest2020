@@ -1,5 +1,6 @@
 import time
 import random
+import sys
 item = []
 
 
@@ -84,24 +85,25 @@ def info():
     print_pause("if you succeed in this mission, "
                 "you can irradicate corona virus from this world")
     print_pause("rules for the game:")
-    print_pause("1. there are total 6 rooms in this business building")
-    print_pause("2.  only 2 of which contains the key for the 3rd room"
+    print_pause("1. There are total 6 rooms in this business building")
+    print_pause("2. Only 2 of which contains the key for the 3rd room"
                 " containing vaccine")
-    print_pause("3. if you catch a wrong staircase, it will"
+    print_pause("3. If you catch a wrong staircase, it will"
                 " lead to your death,as zombies are waiting for you inside")
-    print_pause("4. the numbers on the staircases are jumbled,so be careful")
+    print_pause("4. The numbers on the staircases are jumbled,so be careful")
     print_pause("and if you managed to get to the vaccine chamber,"
                 " you will eventually win")
-    print_pause("5. the vaccine is mounted on a movable robot"
+    print_pause("5. The vaccine is mounted on a movable robot"
                 "which is on move, in every new game its position changes!")
-    print_pause("6. you can only see the second key"
+    print_pause("6. You can only see the second key"
                 " if you have the first one with you!\n")
-    print_pause('''1. stairs to Lobby
-2. stairs to Human resources
-3. stairs to Engineering department
-4. stairs to mechanical department
-5. stairs to peon room
-6. staff survey room\n''')
+    print_pause('''1. Stairs to Lobby
+2. Stairs to Human resources
+3. Stairs to Engineering department
+4. Stairs to mechanical department
+5. Stairs to peon room
+6. Staff survey room
+7. Exit Game\n''')
     print_pause("now make a choice! and save the world")
     room_choose()
 
@@ -111,10 +113,12 @@ def print_pause(data):
     time.sleep(2)
 
 
-def input_check(prompt, option1, option2, option3, option4, option5, option6):
+def input_check(prompt, option1, option2, option3, option4, option5, option6, option7="exit"):
     while True:
         res = input(prompt)
-        if res == option1:
+        if res == option7:
+            exit_game()
+        elif res == option1:
             break
         elif res == option2:
             break
@@ -127,7 +131,7 @@ def input_check(prompt, option1, option2, option3, option4, option5, option6):
         elif res == option6:
             break
         else:
-            print_pause("sorry,i didn't understand"
+            print_pause("sorry,i didn't understand,"
                         "please give a proper room number")
     return res
 
@@ -135,7 +139,9 @@ def input_check(prompt, option1, option2, option3, option4, option5, option6):
 def input_check1(prompt):
     while True:
         response = input(prompt)
-        if response == "yes":
+        if response == "exit":
+            exit_game()
+        elif response == "yes":
             break
         elif response == "no":
             break
@@ -145,9 +151,11 @@ def input_check1(prompt):
 
 
 def room_choose():
-    room = input_check("which room you want to go",
-                       "1", "2", "3", "4", "5", "6")
-    if room == "6":
+    room = input_check("which room you want to go? ",
+                       "1", "2", "3", "4", "5", "6", "exit")
+    if room == "exit":
+        exit_game()
+    elif room == "6":
         roomkey_1()
     elif room == "5":
         roomkey_2()
@@ -176,5 +184,7 @@ def choose():
 def start_game():
     info()
 
+def exit_game():
+    sys.exit()
 
 start_game()
