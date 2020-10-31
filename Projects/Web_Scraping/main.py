@@ -21,9 +21,8 @@ def Amazon_Scraper(URL):
     page = requests.get(URL,headers=headers)
     soup = BeautifulSoup(page.content,'html.parser')
 
-    title = soup.find(id="productTitle").get_text()
+    title = soup.find(id="productTitle").get_text().strip()
     price = soup.find(id="priceblock_ourprice").get_text()
-    title = title.strip()
     currency = price[0]
     l_price = []
     i=0
@@ -34,8 +33,7 @@ def Amazon_Scraper(URL):
 
     for element in l_price:
         for d in digits:
-            if element == d:
-                filtered_price += d 
+            filtered_price += d if element == d
 
     converted_price = float(filtered_price)
     return converted_price , currency , title
@@ -44,8 +42,7 @@ def Amazon_Scraper(URL):
 amazon_url = input("Amazon Url : ")
 currency = get_price(amazon_url)
 print("\n \n")
-budget = input("Your Budget (in " + currency + ") : ")
-budget = float(budget)
+budget = float(input("Your Budget (in " + currency + ") : "))
 
 while True:
     converted_price , currency , title = Amazon_Scraper(amazon_url)
