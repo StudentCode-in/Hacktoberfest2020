@@ -9,6 +9,8 @@ import sys
 
 class GuessNumber:
     """GuessNumber"""
+
+    """Method to allow user to exit game"""
     @staticmethod
     def exit_game():
         sys.exit()
